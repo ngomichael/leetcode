@@ -46,3 +46,9 @@ function fizzBuzz(num) {
   }
   return output;
 }
+
+// Test Cases - Some tests may not apply to the leetcode problem
+//but are there just in case there aren't the same assumptions when interviewing
+// fizzBuzz(15) -->
+// fizzBuzz(0) --> []
+// fizzBuzz('hi') --> -1

@@ -26,7 +26,8 @@ function reverse(string) {
   return reversed;
 }
 
-// Test Cases
+// Test Cases - Some tests may not apply to the leetcode problem
+//but are there just in case there aren't the same assumptions when interviewing
 // reverse('hello') --> 'olleh'
 // reverse('') --> ''
 // reverse(7) --> -1
