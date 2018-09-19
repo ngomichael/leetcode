@@ -25,3 +25,8 @@ function reverse(string) {
   }
   return reversed;
 }
+
+// Test Cases
+// reverse('hello') --> 'olleh'
+// reverse('') --> ''
+// reverse(7) --> -1
