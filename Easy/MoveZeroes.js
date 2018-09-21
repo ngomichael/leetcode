@@ -11,6 +11,9 @@
 
 //Have to loop from length to 0
 //because when you splice the elements shift
+
+//Use splice
+
 //Runtime - O(n)
 function moveZeroes(nums) {
   if (nums === null) {

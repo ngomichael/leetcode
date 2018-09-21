@@ -34,7 +34,7 @@ function singleNumber(arr) {
   }
 }
 
-//XOR
+//XOR - From discussion board
 function singleNumber(arr) {
   return arr.reduce((num1, num2) => num1 ^ num2);
 }
