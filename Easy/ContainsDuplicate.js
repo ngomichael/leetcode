@@ -25,8 +25,9 @@ function containsDuplicate(nums) {
 
   for (let i = 0; i < nums.length; i++) {
     const num = nums[i];
-    count[num] = count[num] ? count[num] + 1 : 1;
-    if (count[num] > 1) return true;
+    const numCount = count[num];
+    numCount = numCount ? numCount + 1 : 1;
+    if (numCount > 1) return true;
   }
 
   return false;

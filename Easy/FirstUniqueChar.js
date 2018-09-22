@@ -15,7 +15,8 @@ function firstUnique(string) {
   }
 
   const indicies = string.split('').reduce((acc, char) => {
-    acc[char] = acc[char] ? acc[char] + 1 : 1;
+    const count = acc[char];
+    count = count ? count + 1 : 1;
     return acc;
   }, {});
 
