@@ -11,6 +11,7 @@
 // Note:
 // Your algorithm should run in linear runtime complexity. Could you implement it using only constant extra space complexity?
 
+//Runtime - O(n)
 function missingNumber(nums) {
   if (!Array.isArray(nums)) return -1;
   if (nums.length === 0) return 0;

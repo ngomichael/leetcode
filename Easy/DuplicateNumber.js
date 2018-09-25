@@ -16,25 +16,22 @@
 // There is only one duplicate number in the array, but it could be repeated more than once.
 
 //Runtime - O(n)
-function missingNumber(nums) {
-  if (!Array.isArray(nums) || nums.length === 0) {
-    return -1;
-  }
+function duplicate(nums) {
+  if (!Array.isArray(nums) || nums.length === 0 || nums.length === 1) return -1;
 
-  let sum = 0;
-  for (let i = 0; i <= nums.length; i++) {
-    sum += i;
-    console.log(sum);
-    if (i < nums.length) {
-      sum -= nums[i];
+  let uniqueNums = new Set();
+
+  for (let i = 0; i < nums.length; i++) {
+    if (uniqueNums.has(nums[i])) {
+      return nums[i];
     }
+    uniqueNums.add(nums[i]);
   }
-
-  return sum;
+  return -1;
 }
 
 // Test Cases
-// missingNumber([]) --> -1
-// missingNumber(null) --> -1
-// missingNumber([1, 2, 3, 4]) --> 0
-// missingNumber([0, 1, 2, 4]) --> 3
+// duplicate([0, 3, 1, 3, 2]) --> 3
+// duplicate([1]) --> -1
+// duplicate([]) --> -1
+// duplicate(null) --> -1
