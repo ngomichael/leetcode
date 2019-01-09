@@ -20,7 +20,7 @@ function majorityElement(arr) {
   const count = arr.reduce(
     (acc, num) => ({
       ...acc,
-      [num]: acc[num] ? acc[num] + 1 : 1
+      [num]: acc[num] ? acc[num] + 1 : 1,
     }),
     {}
   );
