@@ -4,16 +4,17 @@
  */
 
 // Uses Fibonacci Sequence
-var climbStairs = function(n) {
-  if (n < 0) return 0;
-  if (n <= 2) return n;
+const climbStairs = num => {
+  if (num < 0) return 0;
+  if (num <= 2) return num;
 
-  var arr = [1, 2];
-  for (var i = 2; i < n; i++) {
+  let arr = [1, 2];
+
+  for (let i = 2; i < num; i++) {
     arr[i] = arr[i - 1] + arr[i - 2];
   }
 
-  return arr[n - 1];
+  return arr[num - 1];
 };
 
 // Test Cases
